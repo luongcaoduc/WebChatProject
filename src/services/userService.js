@@ -1,6 +1,6 @@
 import UserModel from "./../models/userModel";
 import { transErrors } from "../../lang/vi";
-import bcrpyt from "bcrypt";
+import bcrpyt from "bcryptjs";
 
 const saltRounds = 7;
 
