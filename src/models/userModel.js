@@ -53,7 +53,7 @@ UserSchema.statics = {
     ).exec();
   },
   findUserByIdToUpdatePassword(id) {
-    return this.findById(id).exec();
+    return this.findOne({_id: id})
   },
   findUserByIdForSessionToUse(id) {
     return this.findById(id, {"local.password": 0}).exec();

@@ -96,7 +96,7 @@ let updatePassword = async (req, res) => {
 
   try {
     let updateUserItem = req.body;
-    await user.updatePassword(req.user.id, updateUserItem);
+    await user.updatePassword(req.user._id, updateUserItem);
 
     let result = {
       message: transSuccess.user_password_updated
