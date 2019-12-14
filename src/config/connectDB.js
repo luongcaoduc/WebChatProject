@@ -5,7 +5,7 @@ import bluebird from 'bluebird';
 
 let connectDB = () => {
   mongoose.Promise = bluebird;
-  let URI = `mongodb://localhost:27017/webChat`;
+  let URI = `mongodb://mongo:27017/webChat`;
 
   return mongoose.connect(URI, {useMongoClient: true});
 };
